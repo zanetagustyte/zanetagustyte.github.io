@@ -118,24 +118,25 @@ flex-direction: column;
 justify-content: center;
 
 }
- .three-column{
+
 
   /* portfolio*/
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
+  .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%; /* Change this from 100px to 100% */
+}
+
+  .swiper-container, .swiper-wrapper, .swiper-slide {
+    width: 500px;
   }
-}
-.swiper{
-  height: auto;
-}
-.swiper-slide img{
-  width: 100%;
-}
 
-
+  .swiper-slide img {
+    width: 500px;
+      display: block;
+      margin: 0 auto;
+  }
 .swiper .swiper-button-prev, .swiper .swiper-button-next{
   color: #FFFFFF;
 }
